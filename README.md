@@ -5,6 +5,9 @@
 Personalización de TabNavigator desarrollado con Expo, React Native y React Navigation
 
 ![captura de la app](app.gif)
+
+
+
 [Demo](https://exp.host/@henrymvc/customTabs)
 
 ## ¿Cómo funciona?
