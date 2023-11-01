@@ -7,6 +7,12 @@ import { Ionicons } from "@expo/vector-icons";
 import CustomTab from "../components/CustomTab";
 const Tab = createBottomTabNavigator();
 
+const routesNames = {
+  HOME: "Home",
+  INMBOX: "Imbox",
+  PROFILE: "Profile"
+}
+
 const TabNavigator = () => {
   return (
     <Tab.Navigator
@@ -19,7 +25,7 @@ const TabNavigator = () => {
       tabBar={props => <CustomTab {...props} />}
     >
       <Tab.Screen
-        name="Home"
+        name={routesNames.HOME}
         component={Home}
         options={{
           title: "Inicio",
@@ -30,6 +36,7 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name="Imbox"
+        name={routesNames.IMBOX}
         component={Imbox}
         options={{
           title: "Mensajes",
@@ -39,7 +46,7 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name={routesNames.PROFILE}
         component={Profile}
         options={{
           title: "Perfil",
